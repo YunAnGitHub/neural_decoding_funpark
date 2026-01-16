@@ -1,0 +1,26 @@
+# Core Data Processing and Scientific Computing
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+
+# Data Visualization
+matplotlib==3.9.0
+seaborn==0.13.2
+
+# Machine Learning and Statistical Analysis
+scikit-learn==1.5.0
+statsmodels==0.14.2
+
+# # Specialized Simulation and Analysis for Computational Neuroscience
+# # Brian2: SNN (Spiking Neural Network) simulator
+# Brian2==2.6.0
+# # MNE: For processing EEG/MEG signals
+# mne==1.7.1
+# # Elephant: Electrophysiology Analysis
+# elephant==1.0.0
+# # Neo: Unified data structures for neuroscience data
+# neo==0.13.3
+
+# # Interactive Environments and Performance Optimization
+# ipython==8.25.0
+# tqdm==4.66.4

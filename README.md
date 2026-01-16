@@ -1,6 +1,6 @@
 # Neural Decoding Funpark 🧠
 
-This is a practice project focused on **Neural Decoding**, aiming to explore neuroscience data using Python (or matlab) and various computational algorithms.
+This is a practice project focused on **Neural Decoding**, aiming to explore neuroscience data using Python (or MATLAB) and various computational algorithms.
 
 ## Quick Start
 
