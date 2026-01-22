@@ -1,16 +1,16 @@
-# this script is to study how to figure out the threshold between two distribution
+# This script is to study how to figure out the threshold between two distributions
 # Date: 2026-Jan-22
 # Author: Yun-An Huang
 
-# the first distribution S1 = N(5,0.5) , S2 = N(7,1) , cost of mistaken think it is S2 is double (more punish in false alarm)
-# Q1 
+# The first distribution S1 = N(5,0.5), S2 = N(7,1).
+# Cost of mistaking S1 for S2 is double (higher penalty for false alarm).
+# Q1. find the best threshold.
 
 import numpy as np
 import matplotlib.pyplot as plt
-import os
 import scipy.stats as stats
 
-# create two distribution
+# Create two distributions
 
 X = np.arange(0, 10, 0.005)
 Y_s1 = stats.norm.pdf(X, 5, 0.5)
@@ -24,7 +24,7 @@ for  i , x in enumerate(X):
 min_cost = np.min(Total_cost)
 min_cost_idx = np.argmin(Total_cost)
 
-# plot the two distribution
+# Plot the two distributions
 
 plt.figure(figsize=(10, 8))
 plt.subplot(2, 1, 1)
