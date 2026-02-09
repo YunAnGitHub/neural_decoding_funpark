@@ -146,3 +146,4 @@ angle = (np.degrees(np.arctan2(pop_vector[1], pop_vector[0]))*-1+90)%360
 
 print(np.degrees(np.arctan2(pop_vector[1], pop_vector[0])))
 print(f'the population vector is {pop_vector}, angle is {angle}')
+
