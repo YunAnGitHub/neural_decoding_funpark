@@ -5,7 +5,6 @@ Date: 2026-Feb-09
 
 Based on the integrate-and-fire neuron model,
 find the minimum I that can fire the neuron.
-find the minimum input current (I) that causes the neuron to fire.
 
 
 """
@@ -26,20 +25,17 @@ import matplotlib.pyplot as plt
 import os
 
 # initialize
-# Initialize
 DIR = os.path.dirname(__file__)
 I_ini = 0.01
 I_step = 0.01
 I_max = 1
 
 # input current
-# Input current
 
 #I = 1 # nA
 # I = 0.26 # nA
 
 # capacitance and leak resistance
-# Capacitance and leak resistance
 C = 1 # nF
 R = 40 # M ohms
 
@@ -49,16 +45,12 @@ R = 40 # M ohms
 tstop = 200 # ms
 abs_ref = 5 # absolute refractory period 
 V_th = 10 # spike threshold
-abs_ref = 5 # Absolute refractory period 
-V_th = 10 # Spike threshold
 
 for i in np.arange(I_ini, I_max, I_step):
     I = i
     V = 0
     ref = 0 # absolute refractory period counter
     V_trace = []  # voltage trace for plotting
-    ref = 0 # Absolute refractory period counter
-    V_trace = []  # Voltage trace for plotting
     fired = False
     
     for t in range(tstop):
@@ -68,13 +60,10 @@ for i in np.arange(I_ini, I_max, I_step):
         else:
             ref -= 1
             V = 0.2 * V_th # reset voltage
-            V = 0.2 * V_th # Reset voltage
         
         if V > V_th:
             V = 50 # emit spike
             ref = abs_ref # set refractory counter
-            V = 50 # Emit spike
-            ref = abs_ref # Set refractory counter
             fired = True
             
         V_trace += [V]
